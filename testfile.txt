@@ -8,5 +8,4 @@ test file for ege
 7
 8
 9
-10naber
-bilader?
+10
