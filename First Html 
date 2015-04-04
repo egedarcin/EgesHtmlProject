@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+header {
+    background-color:aqua;
+    color:black;
+    text-align:center;
+    padding:5px;
+}
+ul#menu {
+    padding: 10px;
+}
+
+ul#menu li {
+    display: inline;
+}
+
+ul#menu li a {
+    background-color: aqua;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px 4px 0 0;
+}
+
+ul#menu li a:hover {
+    background-color: orange;
+}
+
+section {
+    width:100%;
+    float:left;
+    padding:10px;
+
+}
+footer {
+    background-color:aqua;
+    color:black;
+    clear:both;
+    text-align:right;
+    padding:5px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Personalisation</h1>
+</header>
+<ul id="menu">
+ <li><a href="#p2">Skip Intro</a></li>
+ <li><a href="#p3">Wallhaven</a></li>
+ <li><a href="http://egedarcin.com/2015/03/30/hello-world/" target="_blank">Previous Post</a></li>
+</ul>
+
+<section>
+<h2>You! You're a person, right?</h2>
+<p>If you <!-- douchebag -->can read this <!-- piece of crap -->without being offended, you are! If you can't, then you are a computer or a programmer. You guys know what I mean.
+Anyway, we have been thought as we were kids that we are unique in our own ways, right?
+Our looks, sizes, thoughts, nearly everything can differ. Our DNA, life's code, is different (more than 99 percent is the same, but what makes you you is the other part.)
+And because of that, we are prone to personalise our own stuff. Try to make them different from others. For an example, most of us have hung posters of our favourite groups, cars, gaming stuff and personalised our room.  It was ours and ours own.</p>
+<p> <a id="p2">And</a> I still see some pc's and cellphones, still with the default wallpapers, messy desktops and 9 full pages full of useless stuff from app store.
+Couldn't figure out the problem here? Let me tell you.
+What would your mom say when she saw your room full of useless stuff that you've brought from outside, dirty laundries on floor, toys scrambled around?
+Yes, you can find your favourite undies from that mess when you need, it takes long but yes you can, but it's still a mess and you should tidy it up! Pronto!
+If you organise your pc/mobile you will see it's benefits, like your mom finds your lost stuff immediately. You'll see it's benefits.</p>
+<p> <a id="p3">And</a> about personalisation stuff: You can put your dear ones to your wallpaper and that is so sweet of you, but if you want something badass like <a href="http://alpha.wallhaven.cc/wallpaper/186457">Deadpool riding Iron Man</a> or a spectacular view of <a href="http://alpha.wallhaven.cc/wallpaper/185628">Mount Fuji</a> or a <a href="http://alpha.wallhaven.cc/wallpaper/56179">cat</a>. Why not a cat? Everybody loves them!
+At this point, here comes the aid of <a href="http://alpha.wallhaven.cc/">Wallhaven</a> It's a site created by and for people who like wallpapers, as well as a place where anime fans can be treated mostly like normal human beings. The original idea was to make an alternative to wallbase.cc that could become a site in its own right. (we miss you Wallbase!)
+</p>
+<p>Hey you! Why are you still reading this? Go tidy up your pc, erase useless stuff from your cellphone and put a good wallpaper to it.You will thank me later.
+</p>
+</section>
+
+<footer>
+Darcho
+</footer>
+
+</body>
+</html>
