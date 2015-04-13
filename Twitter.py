@@ -1,6 +1,11 @@
 import urllib.request
 import time
 
+def set_password():
+    password = "wazesxcdrftvbgyhn345678"
+    
+set_password()    
+
 def send_to_twitter(msg):
     password_manager = urllib.request.HTTPPasswordMgr ()
     password_manager.add_password("Twitter API","http://twitter.com/statuses", "darchibald_", "wazesxcdrftvbgyhn345678")
