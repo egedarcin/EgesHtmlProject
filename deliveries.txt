@@ -1,0 +1,18 @@
+Depot:
+Depot:
+Depot:
+Alacaatli
+Description:
+N11 Teslimat
+Address:
+Ahmet Taner Kislali Mah. 2731. Sok. No: 160/5
+Cankaya ANKARA PK: 06810
+
+Depot:
+Alcaatli
+Description:
+N11 Kargo
+Address:
+Ahmet Taner Kislali Mah. 2731. Sok. No: 160/7 
+Cankaya ANKARA PK: 06810
+
