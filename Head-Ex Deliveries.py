@@ -3,9 +3,12 @@ from tkinter import*
 
 app = Tk()
 app.title('Head-Ex Deliveries')
+
 Label(app, text = "Depot:").pack()
-depot = Entry(app)
-depot.pack()
+depot = StringVar()
+Radiobutton(app, variable = depot, text = "Cambridge, MA", value = "Cambridge, MA").pack()
+Radiobutton(app, variable = depot, text = "Cambridge, UK", value = "Cambridge, UK").pack()
+Radiobutton(app, variable = depot, text = "Seattle, WA", value = "Seattle, WA").pack()
 
 def save_data():
    fileD = open("deliveries.txt", "a")
@@ -15,9 +18,9 @@ def save_data():
    fileD.write("%s\n" % description.get())
    fileD.write("Address:\n")
    fileD.write("%s\n" % address.get("1.0", END))
-   depot.delete(0, END)
    description.delete(0, END)
    address.delete("1.0", END)
+   depot.set(None)
 
 
 Label(app, text = "Description:").pack()
