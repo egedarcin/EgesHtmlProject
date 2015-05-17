@@ -1,15 +1,4 @@
 from tkinter import*
-
-
-app = Tk()
-app.title('Head-Ex Deliveries')
-
-Label(app, text = "Depot:").pack()
-depot = StringVar()
-Radiobutton(app, variable = depot, text = "Cambridge, MA", value = "Cambridge, MA").pack()
-Radiobutton(app, variable = depot, text = "Cambridge, UK", value = "Cambridge, UK").pack()
-Radiobutton(app, variable = depot, text = "Seattle, WA", value = "Seattle, WA").pack()
-
 def save_data():
    fileD = open("deliveries.txt", "a")
    fileD.write("Depot:\n")
@@ -21,6 +10,20 @@ def save_data():
    description.delete(0, END)
    address.delete("1.0", END)
    depot.set(None)
+def read_depots(file):
+   depots = []
+   depots_f = open(file)
+   for line in depots_f:
+     depots.append(line.rstrip())
+   return depots
+
+app = Tk()
+app.title('Head-Ex Deliveries')
+
+Label(app, text = "Depot:").pack()
+depot = StringVar()
+options = read_depots("depots.txt")
+OptionMenu(app, depot, *options).pack()
 
 
 Label(app, text = "Description:").pack()

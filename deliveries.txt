@@ -1,40 +1,16 @@
 Depot:
-Depot:
-Depot:
-Alacaatli
-Description:
-N11 Teslimat
-Address:
-Ahmet Taner Kislali Mah. 2731. Sok. No: 160/5
-Cankaya ANKARA PK: 06810
-
-Depot:
-Alcaatli
-Description:
-N11 Kargo
-Address:
-Ahmet Taner Kislali Mah. 2731. Sok. No: 160/7 
-Cankaya ANKARA PK: 06810
-
-Depot:
-Cambridge, MA
+Ankara, Turkey
 Description:
 N11
 Address:
-bahar caddesi sisli sitesi kat 3 no:9 
+2731. Sok. No: 160/5 Cankaya 
 
 Depot:
-Cambridge, MA
+Istanbul, Turkey
 Description:
-N11
+N112
 Address:
-bahar caddesi sisli sitesi kat 3 no:9 
-
-
-Depot:
-Cambridge, UK
-Description:
-N11
-Address:
-bahar caddesi sisli sitesi kat 3 no 9
+Hobyar Mah. Turkocagi Cad. No: 4 
+Istanbul Lisei
+Sultanahmet Fatih
 
