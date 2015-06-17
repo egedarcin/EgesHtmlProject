@@ -1,6 +1,8 @@
 import tweepy, time, sys
-from tkinter import *
+import tkinter as tk
+from tkinter import ttk
 import tkinter.messagebox
+
 
 def tweet_data():
    input = tweet_text.get()
@@ -15,17 +17,19 @@ auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 api = tweepy.API(auth)
 
+root = tk.Tk()
+root.title("Twitter")
+root.configure(background='cyan')
+ttk.Style().configure('style.TLabel', foreground='red', background='cyan')
+ttk.Style().configure('style.TButton', foreground='red', background='black')
 
-app = Tk()
-app.title("Twitter")
+label = ttk.Label(root, text='Watcha Thinkin?', style='style.TLabel')
+label.pack()
 
-app.geometry("300x300+100+100")
-app.configure(background='cyan' )
-Label(app, text = "Whatcha Thinkin?", background='cyan').pack()
-tweet_text = Entry(app,  width = 150, background='cyan')
+tweet_text = ttk.Entry(root, width = 40, background='cyan')
 tweet_text.pack()
 
-Button (app, text = "Tweet!",
-             width = 20, command = tweet_data).pack()
+button = ttk.Button(root, text='Tweet!', style='green/black.TButton', command = tweet_data)
+button.pack()
 
-app.mainloop()
+root.mainloop()
