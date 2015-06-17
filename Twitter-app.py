@@ -1,6 +1,24 @@
+#--This program tweets to https://twitter.com/darchibald_#
+#--You have to change consumer key/secret/access key/secret for your own account.#
+#--This program uses pygame, but there is no python 3 support for macOS.#
+#--To download pygame for macOS: http://florian-berger.de/en/articles/installing-pygame-for-python-3-on-os-x/#
+
 import tweepy, time, sys
 from tkinter import *
 import tkinter.messagebox
+import pygame.mixer
+
+sounds = pygame.mixer
+sounds.init()
+
+def combine_funcs(*funcs):
+    def combined_func(*args, **kwargs):
+        for f in funcs:
+            f(*args, **kwargs)
+    return combined_func
+
+def play_sent_sound():
+    sent_s.play()
 
 def tweet_data():
    input = tweet_text.get()
@@ -25,7 +43,9 @@ Label(app, text = "Whatcha Thinkin?", background='cyan').pack()
 tweet_text = Entry(app,  width = 150, background='cyan')
 tweet_text.pack()
 
+sent_s = sounds.Sound("beep.wav")
+
 Button (app, text = "Tweet!",
-             width = 20, command = tweet_data).pack()
+             width = 20, command = combine_funcs(tweet_data, play_sent_sound)).pack()
 
 app.mainloop()
