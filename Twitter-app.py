@@ -22,7 +22,7 @@ def combine_funcs(*funcs):
 def play_sent_sound():
     sent_s.play()
 
-def tweet_data():
+def tweet_send_data_to_twitter():
    input = tweet_text.get()
    api.update_status(status= input)
    tweet_text.delete(0, END)
@@ -48,6 +48,6 @@ tweet_text.pack()
 sent_s = sounds.Sound("tweeet.wav")
 
 Button (app, text = "Tweet!",
-             width = 20, command = combine_funcs(tweet_data, play_sent_sound)).pack()
+             width = 20, command = combine_funcs(tweet_send_data_to_twitter, play_sent_sound)).pack()
 
 app.mainloop()
